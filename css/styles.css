@@ -1,26 +1,26 @@
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Poppins';
   font-weight: 300;
-  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); 
+  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Poppins';
   font-weight: 400;
-  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); 
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Poppins';
   font-weight: 600;
-  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); 
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Poppins';
   font-weight: 900;
   src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
@@ -40,6 +40,17 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 address {
@@ -50,8 +61,29 @@ ul {
   list-style-type: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* Button */
 .button {
+  padding: 16px 32px;
   color: var(--color-primary-light);
   font-weight: 600;
   background-color: var(--color-brand-light);
@@ -77,7 +109,12 @@ ul {
 }
 
 /* Hero section */
+
+.hero-section {
+  padding: 272px 0;
+}
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
@@ -111,6 +148,14 @@ ul {
 
 /* Traditions section */
 
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -122,12 +167,21 @@ ul {
 
 /* Chefs section */
 
+.chefs-title {
+  margin-bottom: 80px;
+}
+
 .chef-title {
-font-size: 40px;
-font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 /* Formats section */
+
+.formats-title {
+  margin-bottom: 80px;
+}
 
 .format-title {
   font-size: 24px;
@@ -139,12 +193,18 @@ font-weight: 600;
   font-weight: 300;
 }
 
+/* Contacts section */
+
+.contacts-title {
+  margin-bottom: 16px;
+}
+
 /* Footer */
 
 .address-link {
   color: var(--color-primary-light);
-font-size: 16px;
-font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .address-link:hover {
