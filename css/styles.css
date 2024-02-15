@@ -183,6 +183,16 @@ ul {
   padding-top: 96px;
 }
 
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
 .traditions-title {
   margin-bottom: 42px;
 }
@@ -194,6 +204,10 @@ ul {
 
 .traditions-text .uppercase {
   text-transform: uppercase;
+}
+
+.traditions-text.limited {
+  max-width: 340px;
 }
 
 /* Chefs section */
